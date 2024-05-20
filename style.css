@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: auto; /* Permite scroll orizontal */
+}
+
+header, footer {
+    width: 100%;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(to bottom, #4CAF50, #006400);
+    padding: 20px 0;
+    position: relative; /* Poziționează relativ antetul */
+    width: 100vw; /* Ocupă întreaga lățime a ferestrei vizibile */
+    box-sizing: border-box; /* Include padding și border în dimensiuni */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #333;
+}
+
+main {
+    padding: 20px; /* Padding normal, fără compensare pentru antet */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    width: 100vw; /* Ocupă întreaga lățime a ferestrei vizibile */
+    box-sizing: border-box; /* Include padding și border în dimensiuni */
+    position: relative; /* Poziționează relativ footerul */
+}
+
+/* Stiluri pentru logo */
+header h1 img {
+    transform: scale(1.2); /* Mărește imaginea logo-ului */
+}
+
+/* Stiluri pentru form-uri și input-uri */
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black; /* Adăugăm contururi pentru celule */
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.cell-content {
+    text-align: center;
+    position: relative;
+}
+
+.cell-content img {
+    margin-right: 10px;
+}
+
+.cell-content .text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sort-arrow {
+    display: none; /* Săgețile sunt invizibile inițial */
+    margin-left: 5px;
+    font-size: 10px;
+}
+
+.asc {
+    color: green; /* sau alte stiluri pentru săgeata ascendentă */
+}
+
+.desc {
+    color: red; /* sau alte stiluri pentru săgeata descendentă */
+}
